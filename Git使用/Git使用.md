@@ -102,8 +102,10 @@ git init
 
 2. 将本地仓库内容推送至Github
 
+    当你从远程库克隆时候，实际上Git自动把本地的master分支和远程的master分支对应起来了，并且远程库的默认名称是origin。
+
     ~~~
-git remote add origin https://github.com/tugenhua0707/testgit.git
+    git remote add origin https://github.com/tugenhua0707/testgit.git
     
     git push -u origin master#第一次传送
     Git不但会把本地的master分支内容推送的远程新的master分支，
@@ -137,6 +139,24 @@ git remote add origin https://github.com/tugenhua0707/testgit.git
    ```
 
    相比起来git fetch更安全一些，因为在merge前，我们可以查看更新情况，然后再决定是否合并。
+
+4. **本机作为分支**
+
+   使用git clone获得本地仓库
+
+   将远程的dev分支和本地的dev分支联系起来
+
+   ~~~
+   git checkout  –b dev origin/dev
+   ~~~
+
+   将现在的dev分支推送到远程
+
+   ```
+   git push origin dev
+   ```
+
+   
 
 ### 创建和合并分支
 
