@@ -6,9 +6,9 @@
 
 ### 初始化设置
 
-git config --global user.name "HzardFY"
+git config --global user.name "XXXX"
 
-git config --global user.email  "lkjhgfd3500@qq.com"
+git config --global user.email  "XXXX"
 
 ### 初始化仓库
 
